@@ -1,5 +1,3 @@
-% reglas_p1.pl - reglas de recomendacion (despues se pasan a Logic.pl)
-% Prefs es una lista de pref(Interes, afirmativa) o pref(Interes, negativa)
 
 :- consult('BD.pl').
 

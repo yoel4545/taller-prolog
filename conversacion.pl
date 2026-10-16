@@ -1,16 +1,13 @@
 :- encoding(utf8).
 
-% conversacion.pl - Parte de la Persona 3: la conversacion con el usuario.
-% Para correrlo:   swipl conversacion.pl      y luego:   ?- iniciar.
+
 
 % Carga las reglas de recomendacion de la Persona 1 (ellas cargan BD.pl)
 :- consult('reglas_p1.pl').
 % Version falsa de interpretar/2 (se quita cuando llegue BNF.pl)
 :- consult('stubs.pl').
 
-% ---------------------------------------------------------------
-% Banco de preguntas: pregunta(Interes, TextoDeLaPregunta)
-% (despues esta seccion se pasa al final de BD.pl)
+
 % ---------------------------------------------------------------
 pregunta(matematicas,       '¿Te gustan las matemáticas?').
 pregunta(tecnologia,        '¿Te gusta la tecnología?').

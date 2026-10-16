@@ -1,19 +1,11 @@
 :- encoding(utf8).
 :- use_module(library(apply), [maplist/3, exclude/3]).
 
-% BNF.pl - Persona 2: interpretacion de preferencias mediante DCG.
-% Interfaz publica:
-% interpretar(+Texto, -Pref)
-% Recibe un string, entrega pref(Interes, afirmativa/negativa),
-% y falla cuando el texto no pertenece a la gramatica.
 
-% 1. Punto de entrada: normalizar palabras y analizarlas con una DCG.
-% phrase/2 exige consumir todos los tokens: no acepta frases parciales.
 interpretar(Texto, Pref) :-
     normalizar(Texto, Palabras),
     phrase(frase(Pref), Palabras).
 
-% 2. Normalizacion: minusculas, tildes, signos y tokenizacion.
 % Las palabras finales son atomos (por ejemplo, [me,gusta,la,tecnologia]).
 normalizar(Texto, Palabras) :-
     string(Texto),

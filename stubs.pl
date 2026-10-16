@@ -1,10 +1,3 @@
-% stubs.pl - SOLO PARA PRUEBAS. NO SE ENTREGA.
-% Es una version "falsa" y muy simple de interpretar/2.
-% Cuando la Persona 2 entregue BNF.pl, este archivo ya no se usa.
-%
-% interpretar(+Texto, -Pref)
-% Recibe lo que escribio el usuario y devuelve pref(Interes, afirmativa/negativa).
-% Si no reconoce la frase, FALLA (no devuelve nada).
 
 interpretar(Texto, pref(Interes, Polaridad)) :-
     limpiar(Texto, T),

@@ -1,9 +1,6 @@
 :- encoding(utf8).
 
-% BD.pl - Base de conocimientos de OrientadorCE
-% profesion(Nombre).
-% afinidades(Profesion, ListaIntereses): intereses que encajan.
-% incompatibles(Profesion, ListaIntereses): intereses contrarios.
+
 
 profesion('Ingenieria en Computadores').
 profesion('Psicologia').
